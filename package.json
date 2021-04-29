@@ -1,0 +1,26 @@
+{
+  "name": "filenotifier",
+  "version": "1.0.0",
+  "description": "Get notified when a file is added to a directory",
+  "main": "filenotifier.js",
+  "bin": {
+    "filenotifier": "filenotifier.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg package.json"
+  },
+  "pkg": {
+    "outputPath": "dist",
+    "targets": ["node14-linux"]
+  },
+  "author": "Paul den Otter <pauldenotter@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.5.1",
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.1.0"
+  }
+}
